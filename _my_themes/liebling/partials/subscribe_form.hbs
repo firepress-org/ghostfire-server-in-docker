@@ -1,0 +1,20 @@
+{{!--
+This subscribe template is used to display the form where users can subscribe.
+You need to enable the subscription feature first.
+--}}
+
+<form method="post" action="{{action}}" id="{{form_id}}" class="{{form_class}}">
+  {{hidden}}
+
+  <fieldset>
+    <label for="{{input_id}}" class="sr-only">{{placeholder}}</label>
+    {{input_email id=input_id class=input_class placeholder=placeholder value=email autofocus=autofocus}}
+  </fieldset>
+  <button id="{{button_id}}" class="{{button_class}}" type="submit">{{t "Subscribe"}}</button>
+
+  {{script}}
+
+  {{#if error}}
+    <p class="m-small-text in-subscribe-page">{{t "Email cannot be blank."}}</p>
+  {{/if}}
+</form>

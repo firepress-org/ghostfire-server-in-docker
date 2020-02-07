@@ -1,0 +1,19 @@
+{{!--
+This pagination template is used to navigate through newer and older articles.
+--}}
+
+<div class="l-wrapper">
+  <nav class="m-pagination">
+    {{#if prev}}
+      <a href="{{page_url prev}}" class="m-icon-button filled in-pagination-left" aria-label="Newer posts">
+        <span class="icon-arrow-left"></span>
+      </a>
+    {{/if}}
+    <span class="m-pagination__text">{{t "Page"}} {{page}} {{t "of"}} {{pages}}</span>
+    {{#if next}}
+      <a href="{{page_url next}}" class="m-icon-button filled in-pagination-right" aria-label="Older posts">
+        <span class="icon-arrow-right"></span>
+      </a>
+    {{/if}}
+  </nav>
+</div>
