@@ -4,6 +4,6 @@
 ###################################
 
 ARG APP_NAME="ghost-local-dev-in-docker"
-ARG VERSION="0.1.1"
-ARG RELEASE="0.1.1"
+ARG VERSION="0.2.0"
+ARG RELEASE="0.2.0"
 ARG GITHUB_USER="firepress-org"
