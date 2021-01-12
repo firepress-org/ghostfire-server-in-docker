@@ -21,23 +21,21 @@ I have worked and re-work this workflow and with my experience, I can confirm it
 
 - Run Ghost images with tag `edge` or `stable` (you can choose them from: https://hub.docker.com/r/devmtl/ghostfire/tags/)
 - Run Ghost Themes I develop actively which are in my Github local setup.
-- Run Ghost Themes I want to try on the fly. Just unzip any themes in the directory `theme_tryout` and your Ghost container will see it.
+- Rename `_my_themes_sample` to `_my_themes`
+- Run Ghost Themes I want to try on the fly. Just unzip any themes in the directory `_my_themes` and your Ghost container will see it.
 - It shut down the containers automatically after 1 hours.
 - When starting, the workflow tests many elements like:
     - What is the Ghost version
     - What is the Node version
     - Ensure Ghost does response is up
 
-
 ## Video & tutorial about using this
 
-- ToDo, 2018-08-23
-
+- ToDo, 2021-01-11_23h23
 
 ## Docker image source
 
 The [docker images I use](https://github.com/firepress-org/ghostfire) are continuously integrated (built every day) thanks to Travis. See the latest images at: https://hub.docker.com/r/devmtl/ghostfire/tags/
-
 
 ## Basic Setup
 
@@ -50,16 +48,14 @@ Because this workflow syncs themes locally, you need to tweak some variables bef
 
 That’s it!
 
-
 ## Details
 
-- Executing `./run.sh` runs the `stable` image
+- Executing `./runup.sh` runs the `stable` image
 - Executing `./runedge.sh` runs the `edge` image
 - Executing `./rundown.sh` shutdown the container
 - Directory `theme_stable` is where your Ghost Themes are considered stable. You should never copy anything manually in there.
 - Directory `theme_tryout` is where you can manually copy theme within. Copy and unzip Ghost theme you want to try here
 - Directory `content` is where the Ghost container mount its volume. You should never copy anything manually in there.
-
 
 ## Contributing
 
