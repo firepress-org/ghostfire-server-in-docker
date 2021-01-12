@@ -1,6 +1,6 @@
 ###################################
-# REQUIRED for bashLaVa https://github.com/firepress-org/bashlava
-# REQUIRED for Github Action CI template https://github.com/firepress-org/ghostfire/tree/master/.github/workflows
+# At FirePress we run virtually everything in Docker
+# This Dockerfile is REQUIRED by BashLaVa https://github.com/firepress-org/bashlava
 ###################################
 
 ARG APP_NAME="ghost-local-dev-in-docker"

@@ -1,16 +1,15 @@
 # Files
 ############
+var-config.sh
+_my_themes
+fct_sync_external_themes.sh
+content
+
 .bashcheck.sh
 .cache
 coverage
 dist
-npm-debug
 .env
-bashlava_help.md
-
-# Compiled source #
-###################
-_my_themes
 
 # Compiled source #
 ###################

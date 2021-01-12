@@ -10,10 +10,7 @@ mkdir -pv ${LOCAL_PATH}
 # --- Remove Container (in case the container is already running)
 source $(pwd)/rundown.sh .
 
-# --- Sync my external theme(s) (OPTIONAL)
-DIR_FROM=${DIR_FROM_EXTERNAL}
-DIR_INTO=${DIR_INTO_EXTERNAL}
-source ./fct_rsync_nodelete.sh .
+source ./fct_sync_external_themes.sh .
 
 # --- Sync my local theme(s)
 DIR_FROM=${DIR_MY_THEMES}

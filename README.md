@@ -1,16 +1,20 @@
-## What problem does this project solves?
+# Why this project?
 
-**First**, as I [maintain many Ghost Themes](https://github.com/firepress-org), my pain was growing exponentially. I needed to develop & maintain those themes quickly, test them, using real content that makes sense. All of this without putting unnecessary stuff in the git repo of each theme. 
+## Try Ghost themes quickly.
 
-I was always running after my tail as soon as I was switching between different themes or duplicating hundred of MB to duplicate my Ghost setup.
-
-**Second**, there are many Ghost themes on Github without a proper live demo. I just wanted to download a few of them to see the result locally. Oh, and did I saw the pain to work between different machines?
+There are many Ghost themes on Github without a proper live demo. I just wanted to download a few of them to see the result locally. Oh, and did I saw the pain to work between different machines?
 
 This project solves all of that and makes the whole process efficient.
 
-## What is this?
+## Develop many themes in parallel
 
-It’s a workflow to run Ghost locally within a Docker container. Once your local paths are define it’s really fun and easy to work between many themes.
+As I [maintain many Ghost Themes](https://github.com/firepress-org), my pain was growing exponentially. I needed to develop & maintain those themes quickly, test them, using real content that makes sense. All of this without putting unnecessary stuff in the git repo of each theme. 
+
+I was always running after my tail as soon as I was switching between different themes or duplicating hundred of MB to duplicate my Ghost setup.
+
+## The solution
+
+Have a consistent workflow to run Ghost locally within a Docker container. Once your local paths are define it’s really fun and easy to work between many themes.
 
 **Two-goal here**:
 
