@@ -4,19 +4,20 @@ set -o errtrace         # Make sure any error trap is inherited
 set -o pipefail         # Use last non-zero exit code in a pipeline
 set -o nounset
 
-# Sync external theme
-DIR_FROM_EXTERNAL="/myuser/workspace/theme1"
-DIR_INTO_EXTERNAL="${DIR_MY_THEMES}/theme1"
-source ./fct_rsync_nodelete.sh .
+# Map all external themes you locally here
+# Un-comment 'source ./fct_rsync_nodelete.sh .' as needed
 
-# Sync external theme
-DIR_FROM_EXTERNAL="/myuser/workspace/theme2"
-DIR_INTO_EXTERNAL="${DIR_MY_THEMES}/theme2"
-source ./fct_rsync_nodelete.sh .
+_theme_name-="theme1"
+DIR_FROM_EXTERNAL="/myuser/workspace/${_theme_name}"
+DIR_INTO_EXTERNAL="${DIR_MY_THEMES}/${_theme_name}"
+#source ./fct_rsync_nodelete.sh .
 
-# Sync external theme
-DIR_FROM_EXTERNAL="/myuser/workspace/theme3"
-DIR_INTO_EXTERNAL="${DIR_MY_THEMES}/theme3"
-source ./fct_rsync_nodelete.sh .
+_theme_name-="theme2"
+DIR_FROM_EXTERNAL="/myuser/workspace/${_theme_name}"
+DIR_INTO_EXTERNAL="${DIR_MY_THEMES}/${_theme_name}"
+#source ./fct_rsync_nodelete.sh .
 
-# Map all themes you have here
+_theme_name-="theme3"
+DIR_FROM_EXTERNAL="/myuser/workspace/${_theme_name}"
+DIR_INTO_EXTERNAL="${DIR_MY_THEMES}/${_theme_name}"
+#source ./fct_rsync_nodelete.sh .
